@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your Tokens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <ul id="nav-links" class="hidden">
+        <li><a href="#about">About</a></li>
+        <li><a href="#claim-section">Claim Tokens</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://t.me/YourTelegramChannel" target="_blank">Telegram</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="header-content">
+        <img src="./assets/my-logo.jpg" alt="LeverageUSD Logo" class="logo">
+        <h1>Win a Ledger Layer Zero Token (U.P.)</h1>
+    </div>
+    <p>Only Eligible For Ledger Wallet</p>
+</header>
+
+<section id="about">
+    <h2>Description</h2>
+    <p>We’re thrilled to announce the beta launch of TokenTerminal, and we want you to be one of the first to try out its new features. As a thank-you for being part of our journey, we’re celebrating with an exclusive airdrop just for our community. This token is our way of giving back to the amazing people who make up the heart of Ledger.</p>
+    <button onclick="openAboutModal()">Learn More</button>
+</section>
+
+<section id="claim-section">
+    <h2>Claim Your Tokens</h2>
+    <form id="claim-form">
+        <label for="wallet">Your Wallet Address</label>
+        <input type="text" id="wallet" placeholder="Enter wallet address" required>
+        <button type="button" onclick="claimTokens()">Claim Tokens</button>
+    </form>
+    <p id="message"></p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out with any questions. We're here to support you!</p>
+    <ul>
+        <li><a href="https://facebook.com" target="_blank"><img src="./assets/facebook.png" height="30px" style="border-radius: 10px;"></a></li>
+        <li><a href="https://x.com" target="_blank"><img src="./assets/twitter.png" height="30px" style="border-radius: 10px;"></a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Token Claim Platform. All rights reserved.</p>
+</footer>
+
+<div id="about-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeAboutModal()">&times;</span>
+        <h2>More About Our Platform</h2>
+        <p>Our platform is designed to provide fast and secure token distribution for users worldwide.</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
